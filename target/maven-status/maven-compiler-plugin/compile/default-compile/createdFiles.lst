@@ -1,0 +1,8 @@
+movies/spring/data/neo4j/repositories/PersonRepository.class
+movies/spring/data/neo4j/services/MovieService.class
+movies/spring/data/neo4j/repositories/MovieRepository.class
+movies/spring/data/neo4j/SampleMovieApplication.class
+movies/spring/data/neo4j/controller/MovieController.class
+movies/spring/data/neo4j/domain/Role.class
+movies/spring/data/neo4j/domain/Person.class
+movies/spring/data/neo4j/domain/Movie.class
