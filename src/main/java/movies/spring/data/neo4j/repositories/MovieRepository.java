@@ -41,9 +41,9 @@ public interface MovieRepository extends Neo4jRepository<Movie, Long> {
 	@Query("MATCH (m:Movie)" + "WHERE m.language: {language}" + "ORDER BY m.yearOfRelease, m.likes" + "RETURN m")
 	public List<RecommendationData> sortByLanguage(String language);
 
-	@Query("MATCH (p:User)" + "CREATE (p) - [:LIKES] -> (m: Movie)" +"RETURN p,m")
+	@Query("MATCH (user:User{name: user})" + "CREATE (user) - [:LIKES] -> (movie3: Movie)" +"RETURN user,movie3")
 	public ArrayList<Movie> likes(Movie movie, User user);
 
-	@Query("MATCH (p:User)" + "CREATE (p) - [:DISLIKES] -> (m: Movie)" +"RETURN p,m")
+	@Query("MATCH (user:User{name: user})" + "CREATE (user) - [:DISLIKES] -> (movie3: Movie)" +"RETURN user,movie3")
 	public ArrayList<Movie> dislikes(Movie movie, User user);
 }

@@ -45,6 +45,8 @@ public class City {
         this.languages = languages;
     }
 
+    public City(){}
+
     public City(List<Movie> movies, List<User> users, List<Language> languages) {
         this.movies = movies;
         this.users = users;

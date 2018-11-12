@@ -34,7 +34,7 @@ public class User {
     @Relationship(type = "SPEAKS")
     List<Language> languages;
 
-    @Relationship(type = "INTERESTED_IN", direction = Relationship.INCOMING)
+    @Relationship(type = "INTERESTED_IN")
     ArrayList<String> genre;
 
     public User() {

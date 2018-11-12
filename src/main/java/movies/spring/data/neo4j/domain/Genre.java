@@ -14,7 +14,7 @@ public class Genre {
     @Relationship(type = "IS_OF")
     String genre;
 
-    @Relationship(type = "INTERESTED_IN")
+    @Relationship(type = "INTERESTED_IN", direction = Relationship.INCOMING )
     ArrayList<String> genres;
 
     public String getGenre() {
